@@ -1,3 +1,5 @@
 /lec5.iml
 /.idea/
 node_modules/
+dist/
+/client/.parcel-cache/
