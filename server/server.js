@@ -14,7 +14,7 @@ app.post("/login", (req, res) => {
   console.log("POST /login ");
 });
 
-app.use(express.static("public"));
+app.use(express.static("../client/dist"));
 
 const server = app.listen(process.env.PORT || 3000, () => {
   console.log(`Running on http://localhost:${server.address().port}`);
