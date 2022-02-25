@@ -1,4 +1,3 @@
 /lec5.iml
 /.idea/
-/server/node_modules/
-/node_modules/
+node_modules/
