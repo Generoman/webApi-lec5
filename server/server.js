@@ -1,7 +1,6 @@
 import express from "express";
 
 const app = express();
-console.log("Running on http://localhost:3000");
 
 app.get("/login", (req, res) => {
   res.json({
@@ -15,4 +14,6 @@ app.post("/login", (req, res) => {
   console.log("POST /login ");
 });
 
-app.listen(3000);
+const server = app.listen(process.env.PORT || 3000, () => {
+  console.log(`Running on http://localhost:${server.address().port}`);
+});
