@@ -7,12 +7,12 @@ app.get("/login", (req, res) => {
   res.json({
     username: "pompadour",
   });
-  console.log("GET /login");
+  console.log("GET /login ");
 });
 
 app.post("/login", (req, res) => {
   res.sendStatus(401);
-  console.log("POST /login");
+  console.log("POST /login ");
 });
 
 app.listen(3000);
