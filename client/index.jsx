@@ -17,18 +17,21 @@ function FrontPage() {
 
 function Login() {
   return (
-    <form action="">
-      <h1>Login</h1>
-      <div>
-        Username: <input type="text" />
-      </div>
-      <div>
-        Password: <input type="password" />
-      </div>
-      <div>
-        <button>Login</button>
-      </div>
-    </form>
+    <div>
+      <form action="">
+        <h1>Login</h1>
+        <div>
+          Username: <input type="text" />
+        </div>
+        <div>
+          Password: <input type="password" />
+        </div>
+        <div>
+          <button>Login</button>
+        </div>
+      </form>
+      <Link to={"/"}>Back</Link>
+    </div>
   );
 }
 
